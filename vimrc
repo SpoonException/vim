@@ -24,6 +24,7 @@ Plugin 'stevearc/vim-arduino'
 
 Plugin 'preservim/nerdtree'	" 目录树
 "Plugin 'ycm-core/YouCompleteMe'	" 自动补全
+Plugin 'Shougo/neocomplcache.vim'
 Plugin 'flazz/vim-colorschemes' " 颜色方案
 Plugin 'ap/vim-css-color'		" 颜色方案
 "Plugin 'iamcco/markdown-preview.nvim'	" markdown预览
