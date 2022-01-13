@@ -23,7 +23,7 @@ Plugin 'plasticboy/vim-markdown' " md格式
 Plugin 'stevearc/vim-arduino'
 
 Plugin 'preservim/nerdtree'	" 目录树
-Plugin 'ycm-core/YouCompleteMe'	" 自动补全
+"Plugin 'ycm-core/YouCompleteMe'	" 自动补全
 Plugin 'flazz/vim-colorschemes' " 颜色方案
 Plugin 'ap/vim-css-color'		" 颜色方案
 "Plugin 'iamcco/markdown-preview.nvim'	" markdown预览
@@ -285,11 +285,11 @@ autocmd FileType python nnoremap <F12> :call ToggleBreakPoint()<Cr>
 " emmet
 let g:user_emmet_expandabbr_key = '<C-E>'  
 " YCM
-let g:ycm_collect_identifiers_from_tags_files = 1 " Let YCM read tags from Ctags file
-let g:ycm_use_ultisnips_completer = 1 " Default 1, just ensure
-let g:ycm_seed_identifiers_with_syntax = 1 " Completion for programming language's keyword
-let g:ycm_complete_in_comments = 1 " Completion in comments
-let g:ycm_complete_in_strings = 1 " Completion in string 
+"let g:ycm_collect_identifiers_from_tags_files = 1 " Let YCM read tags from Ctags file
+"let g:ycm_use_ultisnips_completer = 1 " Default 1, just ensure
+"let g:ycm_seed_identifiers_with_syntax = 1 " Completion for programming language's keyword
+"let g:ycm_complete_in_comments = 1 " Completion in comments
+"let g:ycm_complete_in_strings = 1 " Completion in string 
 " django 模版
 let b:surround_{char2nr("v")} = "{{ \1:\1 }}\r"
 let b:surround_{char2nr("{")} = "{{ \1:\1 }}\r"
