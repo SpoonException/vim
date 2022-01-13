@@ -92,7 +92,6 @@ set statusline=\ %<%F[%1*%M%*%n%R%H]%=\ %y\ %0(%{&fileformat}\ %{&encoding}\ %c:
 set errorformat=%m\ in\ %f\ on\ line\ %l
 set autoindent
 set softtabstop=4 " 使得按退格键时可以一次删掉 4 个空格
-set shell=/bin/zsh\ -l
 autocmd Filetype python set foldmethod=indent   " ptyhon 缩进
 autocmd Filetype python set foldlevel=99        " pythom 折叠
 " 通过空格键快速打开和关闭折叠
