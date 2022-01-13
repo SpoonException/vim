@@ -3,28 +3,10 @@ filetype off                  	" 关闭文件类型检测
 
 set number 		      	" 设置行号
 
-" ============================================================================
-" Vundle initialization
-" Avoid modify this section, unless you are very sure of what you are doing
+" 设置包括vundle和初始化相关的runtime path
 
-" no vi-compatible
-set nocompatible
-
-" Setting up Vundle - the best vim plugin manager
-let iCanHazVundle=1
-let vundle_readme=expand('~/.vim/bundle/vundle/README.md')
-if !filereadable(vundle_readme)
-    echo "Installing Vundle..."
-    echo ""
-    silent !mkdir -p ~/.vim/bundle
-    silent !git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/vundle
-    let iCanHazVundle=0
-endif
-
-filetype off
-
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+set rtp+=~/.vim/bundle/Vundle.vim	" 设置vundle路径
+call vundle#begin()		" 插件管理函数开始 
 
 " 在此添加需要安装的插件列表，格式 Plugin 'git用户/git仓库' 或者 Plugin '协议://git url'
 " 例如:
@@ -77,20 +59,8 @@ Plugin 'Yggdroot/indentLine'    "对齐线
 
 "Plugin 'donaldducky/related.vim' "相关文件
 
-" ============================================================================
-" Install plugins the first time vim runs
-
-if iCanHazVundle == 0
-    echo "Installing Plugins, please ignore key map error messages"
-    echo ""
-    :PluginInstall
-endif
-
-" ============================================================================
-" Vim settings and mappings
-" You can edit them as you wish
-
-" allow plugins by file type (required for plugins!)
+" 你的所有插件需要在下面这行之前，必须
+call vundle#end()            	" 插件管理函数结束
 
 filetype plugin indent on    " 打开“检测”，“插件”和“缩进”
 
